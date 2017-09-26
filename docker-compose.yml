@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  app:
+    build:
+      context: .
+    volumes:
+      - ./:/app
+    environment:
+      - NODE_ENV=production
+      - PORT=8888
+      - DEBUG=*
+    ports:
+      - 8089:8888
