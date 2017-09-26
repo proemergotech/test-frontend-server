@@ -4,7 +4,7 @@ language: bash
 services: docker
 
 env:
- - DOCKER_IMAGE=docker-test-frontend-server
+ - DOCKER_IMAGE=test-frontend-server
 
 script:
   - docker build -t ${DOCKER_IMAGE} .
